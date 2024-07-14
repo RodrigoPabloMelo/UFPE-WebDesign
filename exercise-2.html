@@ -6,7 +6,7 @@
             * {
                 padding: 0px;
                 margin: 0px;
-                border: 0px;
+                border: 0px;;
             }
 
             .menu-button {
@@ -24,11 +24,18 @@
                 width: 128px; 
                 height: 64px;
                 padding: 16px;
+                padding: 16px;
             }
         </style>
     </head>
     
+    
     <body>
+        <!-- Cria uma div pai com 80% da largura, centraliza e adiciona uma borda pontilhada-->
+         <div style="border: 2px dotted blue; width: 80%; height: 128px; margin: 0 auto; display: flex; padding: 32; flex-direction: row;">
+                
+            <!-- Adiciona duas divs dentro de uma div principal; uma para os menus (1-4) e outro para o espaço do logotipo-->
+            <div style="display: flex; justify-content: space-between;  align-items: center; width: 100%; margin: 32px;">
         <!-- Cria uma div pai com 80% da largura, centraliza e adiciona uma borda pontilhada-->
          <div style="border: 2px dotted blue; width: 80%; height: 128px; margin: 0 auto; display: flex; padding: 32; flex-direction: row;">
                 
@@ -42,13 +49,17 @@
                     
                 </div>
 
-                <!-- Div dos menus, justificadas à direita-->
-                <div style="display: flex; justify-content: right; align-items: normal; gap: 64px;">
+                    <!-- Div dos menus, justificadas à direita-->
+                    <div style="display: flex; justify-content: right; align-items: normal; gap: 64px;">
 
+    
                     <div class="menu-button">menu 1</div>
-                    <div class="menu-button">menu 2</div>
-                    <div class="menu-button">menu 3</div>
-                    <div class="menu-button">menu 4</div>
+                        <div class="menu-button">menu 2</div>
+                        <div class="menu-button">menu 3</div>
+                        <div class="menu-button">menu 4</div>
+
+                </div>
+
 
                 </div>
 

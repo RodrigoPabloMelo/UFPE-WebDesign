@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt" style="margin: 30px; font-family: 'Courier New', Courier, monospace ;font-size: large;">
+<html lang="pt" style="margin: 30px; font-family: 'Courier New', Courier, monospace ;font-size: large; color: blue;">
     <head>
-        <!-- Define a codificação de caracteres para UTF-8, a largura da página para o dispositivo e força a maior renderização possível, mesmo que não suportada-->
+        <!-- Define a codificação de caracteres para UTF-8; define a largura da página para o dispositivo e força a maior renderização possível, mesmo que não suportada-->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Exercício 1</title>
         <!-- Reseta os estilos de padding / margin / border do navegador-->
         <style>
             * {
@@ -20,17 +21,15 @@
         <div style=" border: 2px dotted blue; width: 80%; height: 160px; margin: 0 auto;">
             <!-- Adiciona um texto em negrito dentro da div centralizada-->
 
-            <div style="height: auto; margin: 16px; color: blue;">
+            <p style="height: auto; margin: 16px;">
                 <b>WRAP: CONTEÚDO CENTRALIZADO NO NAVEGADOR</b>
-            </div>
-        </div>
-        
-        <!-- Expecifica o valor width visualmente, criando uma div e alinhando à direita-->
-
-        <div style="width: 80%; margin: 0 auto; padding-top: 16px;">
-            <p style="text-align: right; color: blue;">
-                <b>WIDTH: 80%</b>
             </p>
         </div>
+        
+        <!-- Expecifica o valor width visualmente, criando um P e alinhando à direita-->
+
+        <p style="width: 80%; margin: 0 auto; padding-top: 16px; text-align: right;">
+            <b>WIDTH: 80%</b>
+        </p>
     </body>
 </html>

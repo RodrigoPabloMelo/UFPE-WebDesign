@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt" style="margin: 30px; font-family: 'Courier New', Courier, monospace ;font-size: large;">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!-- Reseta os estilos de padding / margin / border do navegador e contém os estilos das classes e ids-->
-        <style>
-            * {
-                padding: 0px;
-                margin: 0px;
-                border: 0px;
-            }
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercício 2 Webdesign Rodrigo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      html {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 16px;
+        width: 80vw;
+        height: 64px;
+        background-color: black;
+      }
 
-            .menu-button {
-                border: 2px dotted blue;
-                width: 20%;
-                height: 64px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 16px;
-            }
+      nav {
+        background-color: white;
+        height: 32px;
+        display: flex;
+        min-width: 76px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: 2px solid white;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+      }
 
-            #logo-navbar {
-                background-color: blue;
-                width: 128px;
-                height: 64px;
-                padding: 16px;
-                padding: 16px;
-            }
-        </style>
-    </head>
-    
-    
-    <body>
-        <!-- Cria uma div pai com 80% da largura, centraliza e adiciona uma borda pontilhada-->
-        <div style="border: 2px dotted blue; width: 80%; height: 128px; margin: 0 auto; display: flex; padding: 32; flex-direction: row;">
+      nav:hover {
+        background-color: black;
+        color: white;
+        transition: 0.1s ease-in;
+      }
 
-            <!-- Adiciona duas divs dentro de uma div principal; uma para os menus (1-4) e outro para o espaço do logotipo-->
-            <div style="display: flex; justify-content: space-between;  align-items: center; width: 100%; margin: 32px;">
-
-                <!-- Div do logotipo, justificado à esquerda-->
-                <div style="display: flex; justify-content: left;">
-
-                    <div id="logo-navbar"></div>
-
-                </div>
-
-                <!-- Div dos menus, justificadas à direita-->
-                <div style="display: flex; justify-content: right; align-items: normal; gap: 64px;">
-
-                        <div class="menu-button">menu 1</div>
-                        <div class="menu-button">menu 2</div>
-                        <div class="menu-button">menu 3</div>
-                        <div class="menu-button">menu 4</div>
-
-                </div>
-            </div>
-        </div>
-    </body>
-</html> 
+      div.navigation {
+        display: flex;
+        gap: 8px;
+      }
+      div.image-logo {
+        display: flex;
+        width: 54px;
+        height: 54px;
+        background-color: white;
+      }
+    </style>
+    <menu class="container">
+      <div class="image-logo">
+        <a href="index.html" image="./logo"></a>
+      </div>
+      <div class="navigation">
+        <nav>Contato</nav>
+        <nav>Ajuda</nav>
+        <nav>Cadastre-se</nav>
+        <nav>Login</nav>
+      </div>
+    </menu>
+  </body>
+</html>
